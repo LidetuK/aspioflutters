@@ -1,10 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:myapp/models/post.dart';
-import 'package:myapp/services/mock_data_service.dart';
-import 'package:myapp/ui/screens/home_screen.dart';
-import 'package:myapp/ui/screens/category_screen.dart';
-import 'package:myapp/ui/screens/post_detail_screen.dart';
+import 'package:myapp/ui/screens/simple_home_screen.dart';
+import 'package:myapp/ui/screens/simple_category_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Blog Reader',
+      title: 'BlogSpace',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -37,8 +34,8 @@ class _MainScreenState extends State<MainScreen> {
   int _selectedIndex = 0;
 
   static final List<Widget> _widgetOptions = <Widget>[
-    const HomeScreen(),
-    const CategoryScreen(),
+    const SimpleHomeScreen(),
+    const SimpleCategoryScreen(),
   ];
 
   void _onItemTapped(int index) {

@@ -1,6 +1,2 @@
-class Category {
-  final int id;
-  final String name;
-
-  Category({required this.id, required this.name});
-}
+// This file is now redundant as Category is defined in post.dart
+// Keeping for backward compatibility but Category class is now in post.dart
